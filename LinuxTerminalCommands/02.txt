@@ -32,3 +32,46 @@ cp -r /path/to/directory/ /path/to/destination/
 
 cp fileName.txt .
 # It copies fileName.txt to our current directory.
+
+4) dd -> It is used mostly to copy low level data, like disk images, writing ISO file to USB drivers. (cp is different, it is used to copy regular files and directories).
+It can be used to copy raw data to removable devices, such as USB drives and CDROMs.
+
+Syntax:
+dd if=<input file> of=<output file> [options]
+
+-if: Input file (source) from which data will be read.
+-of: Output file (destination) where data will be written.
+
+In option part we have some useful options to use:
+-bs = <SIZE> -> In the place of SIZE, we need to write the block size for reading/writing.
+
+-count = <NUMBER> -> In the place of NUMBER, we need to write the number blocks to copy.
+
+No block size or count needs to be specified when copying over entire devices.
+
+5) mv -> It is used to move files/directories between directories.
+(from one location to another one)
+
+Syntax:
+mv <source> <destination>
+
+The first argument is the source, a path to the file to be moved. The second argument is the destination, a path to where the file will be moved to.
+
+If we want to move multiple files simultaneously, you just need the file names. However, note that the last argument is always destination. Other arguments before that are the files which we want to move.
+
+Another thing we can do with this command is to rename files.
+
+mv OLD_NAME NEW_NAME
+
+We just need to write the names, not the file path.
+
+6) rm -> It is used to remove files and directories.
+
+Syntax:
+rm [options] <file/directory>
+
+If we just write "rm fileName", it will delete the file.
+If we want to delete a directory, we need to use -r flag like "rm -r directoryName".
+
+It is important to keep in mind that deleted files and directories do not go into a "trash can" as with desktop-oriented operating systems. When a file is deleted with the rm command, it is almost always permanently gone.
+

@@ -1,0 +1,30 @@
+1) shutdown -> It is used to power off or reboot the system in a controlled manner, allowing users to notify all logged-in users and processes that the system is going down.
+
+To be able to use this command we should have administrative access.
+
+'shutdown' -> Without any argument, it will shut down after one minute.
+
+'shutdown now' -> Shuts down the system immediately.
+
+We can write the message after the command, so when it is shutdowning, the message will appear, like 'shutdown now "GOODBYE"'.
+
+We can specify when shutdowning will happen.
+Example:
+'shutdown +15'
+
+Shuts down the system in 15 minutes. You can replace 15 with any number of minutes.
+We can replace 15 with any number.
+
+We can also special the time like that:
+'shutdown 23:00'
+
+Shuts down the system at 11:00 PM.
+
+
+With each of them, we can use message.
+
+
+2) date -> It prints current time.
+We just need to write 'date'.
+
+3) ifconfig -> 
