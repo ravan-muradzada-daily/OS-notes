@@ -1,0 +1,93 @@
+First topic:
+
+RAVAN - Thread is smallest units of processing within a program, allowing tasks to run concurrently. A program can have multiple threads, each performing separate tasks. If there are multiple threads which are working at the same time, that means multiple different process can happen at the same time, too.
+
+Multithreading have some models.
+One of them is User-Level Threads:
+They are managed by the application, they are fast but limited by OS support.
+
+Another model is Kernel-Level Threads:
+They are managed by the operating system, they allow control and more efficiency in utilizing multiple CPU cores.
+
+The last model is Hybrid Model: This model combines user and kernel level threads for efficiency and flexibility.
+
+*****************************************
+
+MAHAMMAD - Threads are very usefull and helps us to be able to do multiple process at the same time, but while using them we need to be attentive to some issues. For that, we need powerfull Thread Synchronization.
+It prevent issues when multiple threads try to use the same data structure or any resource.
+Without using them, data can be inconsistent.
+
+There are some common methods for thread synchronization. 
+One of them is locks which allow only one thread to access a resource at a time.
+Another one is Semaphores. They manage access to resources by allowing a set number of threads to access them. So when we use them, some specific threads can use the resource, others can't at a time.
+
+We also have mutexes, they are similar to locks, but provide better safety for critical resources.
+
+*****************************************
+
+SAID - While working threads, sometimes multiple threads can stuck to wait other threads.
+That is called Deadlock. The reason why we need them is resource ordering, avoiding circular dependencies.
+
+Sometimes, multiple threads can access some data simultaneously which leads to unpredictable results. The first thread tries to do some specific operations on the data, and another thread does other processes, and this creates some unpredictable problems.
+We should use synchronization mechanisms like locks or mutexes to prevent them.
+
+*****************************************
+
+KANAN - Now, it is time to speak how concurrency and multithreading happens in different operating systems. 
+Windows uses Windows API for multithreading, including functions like 'CreateThread' for thread creation, and synchronization tools like 'WaitForSingleObject'.
+
+Linux manages concurrency using POSIX threads which are also named Pthreads. They provide similar threading functions and synchronization methods.
+
+In summary, both operating systems offer strong concurrency support butt handle thread scheduling and priority differently due to their architecture and purpose. 
+
+*****************************************
+
+NIHAD - Multithreading has huge practical usages in real-world applications.
+
+Such us, web browsers use it to load different webpages at the same time and run background tasks smoothly. 
+Games also use multithreading to handle graphics, physics and player input separately.
+Multithreading accelerates data analysis, processing large datasets faster, and aids in efficient image and video processing.
+Operating systems use threads to manage multiple applications, balance system resources, and support multitasking.
+Servers handle multiple client requests at once through threads, improving response times and handling heavy loads effectively.
+
+
+---------------------------------------------------
+
+
+Second topic:
+
+RAVAN - Package management is the process of installing, updating, configuring, and removing software applications on a computer through a package manager. Package managers are tools that handle these tasks by organizing software into "packages" and automating their management.
+
+They make easier to install and update softwares, also manage necesarry additional softwares. They keep software organized and reduces disk clutter.
+
+*****************************************
+
+KANAN - Some of the most famous Linux package managers are APT, YUM and Pacman.
+
+APT is used mostly in Debian-based systems like Ubuntu. Allows easy software installation, removal, and updating with simple commands like 'apt install'.
+
+YUM is common in Red Hat-based systems, such as Fedora and CentOS. It handles software installations and updates, often using 'yum install'.
+
+Another package manager is Pacman. It is used by Arch Linux, known for its simplicity and efficiency. It installs software with the command 'pacman -S' (pacman dash S), managing dependencies automatically.
+
+*****************************************
+
+MAHAMMAD - Windows has a package manager which is calledd Winget.
+A newer tool on Windows, introduced to simplify software management. Users can install, update, and remove applications from a central repository using commands like 'winget install', similar to Linux package managers.
+
+The installation and updating process in Linux happen typically involving packages from a repository. Updates can be managed in bulk by the package manager, ensuring all software stays current with a single command.
+
+In Windows, using winget, users can also install and update software from a central repository, although Windows traditionally relies on installers (e.g., .exe files) downloaded from various websites.
+
+*****************************************
+
+SAID - For softwares there is a thing which is important a lot and that is Dependency Management. Dependency management is the process of ensuring that all necessary components or libraries required by a software application are present and compatible. It automates the installation of these additional resources, so the main application runs smoothly without errors.
+It ensures application functionality, reduces conflicts, enhances security.
+In short, dependency management helps applications function reliably by automatically handling the software they rely on.
+Automated dependency management integrates well with build tools, making it easier to build, test, and deploy applications consistently across different environments.
+
+*****************************************
+
+NIHAD - In Linux, package managers automatically solve dependencies themselves, meaning they install additional software required for the main program to work properly. For example, installing a video editor will also install all necessary media libraries.
+
+In Windows, Windows installers do not handle dependencies automatically, which can lead to errors if a required library is missing. However, Winget has introduced some dependency handling to simplify the process. Microsoft is continuously improving dependency management in Windows. Features in Windows Package Manager and other tools are expected to evolve, providing better automation and support for complex dependencies.
