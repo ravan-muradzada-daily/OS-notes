@@ -1,0 +1,41 @@
+The premier text editor for Linux and UNIX is a program called "vi". While there are numerous editors available for Linux that range from the tiny editor "nano" to the massive "emacs" editor, there are several advantages to the "vi" editor:
+
+-The "vi" editor is available on every Linux distribution in the world. This is not true of any other editor.
+
+-The "vi" editor can be executed both in a CLI (command line interface) and a GUI (graphical user interface).
+
+-While new features have been added to the "vi" editor, the core functions have been around for decades. 
+
+In reality, most Linux systems don't include the original "vi", but an improved version of it known as "vim", for "vi" improved. This fact may be hidden by most Linux distributions. For the most part, "vim" works just like "vi", but has additional features. 
+
+To get started using "vi", we need to a command like that:
+"vi newFile.txt"
+
+There are three modes used in vi: command mode, insert mode, and ex mode.
+
+-------------------------------------------
+
+Command Mode Movement
+
+Initially, the program starts in command mode. Command mode is used to type commands, such as those used to move around a document, manipulate text, and access the other two modes. To return to command mode at any time, press the Esc key.
+
+Once some text has been added into a document, to perform actions like moving the cursor, the Esc key needs to be pressed first to return to command mode. This seems like a lot of work, but remember that "vi" works in a terminal environment where a mouse is useless.
+
+If we want to change the cursor place, we need to first press Esc first and then:
+
+h: For left one character,
+j: For down one character,
+k: For up one character, 
+l: For right one character,
+w: For forward one word,
+b: For back one word,
+^: For beginning of the file,
+&: For end of the file.
+
+These motions can be prefixed with a number to indicate how many times to perform the movement. For example, 5h would move the cursor five characters to the left and 3w would move the cursor three words to the right.
+
+To move the cursor to a specific line number, type that line number followed by the G character. For example, to get to the fifth line of the file type 5G. 1G or gg can be used to go to the first line of the file, while a lone G will take you to the last line. To find out which line the cursor is currently on, use CTRL+G.
+
+Note:
+Since the upgrade to "vim" it is also possible to use the arrow keys ←↓↑→ instead of h, j, k, l respectively.
+

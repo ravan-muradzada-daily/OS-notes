@@ -75,3 +75,7 @@ If we want to delete a directory, we need to use -r flag like "rm -r directoryNa
 
 It is important to keep in mind that deleted files and directories do not go into a "trash can" as with desktop-oriented operating systems. When a file is deleted with the rm command, it is almost always permanently gone.
 
+7) echo -> It is used  to display a line of text or a variable value to the standard output (usually the terminal). It's commonly used in shell scripts and command-line operations for various purposes, such as outputting messages, displaying variable values, and formatting text.
+
+Syntax:
+"echo STRING".
