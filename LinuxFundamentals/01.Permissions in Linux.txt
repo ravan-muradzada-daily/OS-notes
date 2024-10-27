@@ -1,5 +1,4 @@
-In Linux, file permissions determine who can read, write, or execute a file or directory. When you use the ls -l command, you'll see a line that looks something like this:
-
+In Linux, file permissions determine who can read, write, or execute a file or directory.
 When we write the command: "ls -l", we can see file's permissions. It is written like "r, w, -".
 In each line the first character determines the type of the file:
 
@@ -40,4 +39,3 @@ The part after "+" is for permission name.
 Moreover, using this command we can remove permissions from the user. Example: 
 chmod -w filename.
 
-Additionally, we can replace the 
