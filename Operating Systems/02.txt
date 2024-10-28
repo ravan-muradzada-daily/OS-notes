@@ -1,0 +1,100 @@
+ROM 
+
+ROM (Read-Only Memory) is non-volatile memory that stores firmware and software that cannot be changed. It retains data even whithout electric and is used to boot up the computer and run basic functions.
+
+---------------------------------------
+
+Operating System Mode
+
+User Mode manages the user interface, application execution, and file access, while Kernel Mode handles background tasks like resource access, hardware control, and program instruction processing. 
+System calls facilitate the transition from User Mode to Kernel Mode.
+
+---------------------------------------
+
+Kernel
+
+The kernel is the main part of the operating system that controls everything. It loads first when the computer starts and stays in memory while the computer is on. The kernel runs tasks and manages interruptions in a protected area, while users work in a separate area to avoid conflicts. Users don’t interact directly with the kernel; instead, they use the shell and other programs to communicate with it.
+
+The kernel includes several components:
+
+-Scheduler: Allocates processing time to different processes.
+-Supervisor: Grants access to system resources for each process.
+-Interrupt Handler: Manages requests from hardware devices needing kernel services.
+-Memory Manager: Allocates memory space for users of kernel services.
+-The kernel also provides services for process, file, I/O, and memory management, using system calls for these services.
+
+---------------------------------------
+
+System call
+
+A system call is how a program or user application asks the operating system's kernel for a service. User applications can’t access certain important resources directly for security reasons. When they need to perform tasks like I/O operations, request more memory, create a new process, or wait for signals, they use system calls to ask the operating system for help. System calls are also known as software interrupts.
+
+---------------------------------------
+
+BIOS 
+
+BIOS firmware is stored on a ROM/EPROM chip on the motherboard. It can be accessed during boot by pressing keys like Del, F2, or F10. The BIOS checks all storage devices for a boot loader, typically located in the first 512 bytes of a disk. If found, the BIOS transfers control to the boot loader to start the computer.
+
+The purpose of BIOS (Basic Input/Output System) is to initialize and test hardware components during the boot process. It is a bridge between hardware and OS.
+
+
+
+GPT and MBR 
+
+They are used for partitioning the disk.
+
+MBR (Master Boot Record) allows up to 4 primary partitions, with extended partitions needed for more. GPT (GUID Partition Table) supports up to 128 primary partitions by default, without the same limitations as MBR.
+
+MBR (Master Boot Record) has a disk size limit of 2 terabytes (TB), meaning larger disks cannot fully utilize their capacity. In contrast, GPT (GUID Partition Table) supports much larger disks, theoretically handling storage sizes well beyond 2 TB, even up to exabytes.
+
+---------------------------------------
+
+Common GPT errors
+
+GPT Disk Not Recognized: Older operating systems (like 32-bit Windows XP) may not recognize or access GPT-partitioned disks.
+Limited BIOS Compatibility: Older BIOS-based systems might struggle to boot from GPT disks, as GPT is designed for UEFI systems, leading to potential boot errors.
+
+---------------------------------------
+
+File management
+
+A file is a collection of related information defined by its creator, and file systems manage how data is encoded, stored, and organized on storage devices. Common file systems include FAT12 (floppy disks), FAT16(DOS and older versions of Windows), FAT32(older versions of Windows), NTFS(newer versions of Windows), EXT3(Unix/Linux), and HFS+(Mac OS X). The operating system handles file management tasks such as file and directory creation/deletion, supporting file manipulation, mapping files to storage, and backing up files on nonvolatile media.
+
+---------------------------------------
+
+FAT32 and NTFS
+
+FAT32 supports a maximum volume (partition) size of 2 terabytes (TB). Max file size is 4 gb.
+
+NTFS: NTFS, on the other hand, supports much larger volume sizes, often in the range of petabytes (PB), depending on the version of Windows and the specific implementation.
+It can handle larger files even more than capacity of the device.
+
+FAT32 is widely supported across many operating systems, including Windows, macOS, and Linux, making it a popular choice for USB drives and memory cards due to its broad compatibility. 
+
+NTFS is mainly used in Windows systems, with limited write support on non-Windows platforms, which makes it less suitable for cross-platform use without third-party software.
+
+---------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

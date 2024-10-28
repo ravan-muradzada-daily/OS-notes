@@ -1,0 +1,146 @@
+Computer System = Hardware + Software
+
+Software = Application Software + System Software(OS)
+
+An Operating System is a software that creates connection between a user and computer hardware. It manages a computer's hardware and provides a basis for applications.
+
+OS is for efficiency and convenience.
+
+Computer System Structure can be divided to 4 parts:
+
+1) Hardware - computing recources(any physical parts or components that contribute to a computer system): CPU, memory, I/O devices
+
+2) OS 
+
+3) Applications - define the ways to solve problems using hardware
+
+4) Users - who uses it 
+
+Hardware and software work together to be able to solve the problems.
+
+---------------------------------------
+
+Motherboard
+
+It is the main circuit board in a computer. It connects and allows communication between all components—CPU, RAM, storage, and peripherals—so they can work together.
+
+---------------------------------------
+
+CPU 
+
+The CPU (Central Processing Unit) is the computer's "brain." It performs calculations, runs instructions, and processes data to execute tasks and run programs. The CPU requires commands and data to function, which travel via the system bus. The operating system establishes rules for data transfer and CPU usage.
+Its speed is called clock cpeed. (GHz)
+
+---------------------------------------
+
+RAM
+
+RAM (Random Access Memory) is temporary (volatile) memory that stores data and instructions for active tasks, allowing quick access and fast processing. It clears when the computer is turned off.
+Each RAM chip has millions of uniform address spaces, with a unique address. The operating system governs the use of these memory spaces and manages data storage and retrieval. Device drivers for RAM are included with the OS.
+
+---------------------------------------
+
+SSD and HDD and their difference
+
+These are two types of storage drives responsible for saving  anything like programs and documents even it is turned off.
+
+An SSD (Solid State Drive) uses flash memory for fast data access and no moving parts, making it faster and more durable. An HDD (Hard Disk Drive) uses spinning disks and a read/write arm, which makes it slower and more prone to wear. SSDs are faster but more expensive; HDDs are cheaper with more storage capacity.
+SSD has two versions: NVMe and SATA.
+
+---------------------------------------
+
+GPU 
+
+A GPU (Graphics Processing Unit) is a processor that handles graphics and visual tasks, like rendering images and videos. It’s essential for gaming, video editing, and graphic-intensive applications.
+
+---------------------------------------
+
+PSU
+
+The PSU (Power Supply Unit) converts electricity from an outlet to the correct voltage and supplies power to all computer components.
+Modern computers need 500 to 850 W.
+It is good to use a slightly more powerful PSU to prevent system failures and support future upgrades.
+
+---------------------------------------
+
+CD, DVD and Blu-Ray
+
+A CD (Compact Disc) is a digital optical disc used for storing data, music, or software. It holds about 700 MB of data and is read by a laser in a CD player or drive.
+
+A DVD (Digital Versatile Disc) is an optical disc that stores larger amounts of data than a CD, from 4.7 gb to 17 gb (single layer 4.7 gb). It’s commonly used for video, software, and data storage.
+
+A Blu-ray is an blue optical disc format that stores high-definition video and data, offering around 25 GB on a single-layer. Better quality than DVD.
+
+---------------------------------------
+
+Mainframe, PC, mobile OS
+
+Mainframe OSs optimize hardware use, PC OSs support games and applications, and mobile OSs facilitate user interaction for program execution.
+
+---------------------------------------
+
+The structure of computer systems
+
+Computer resource access is layered, with each layer interacting only with adjacent ones. 
+Installing new hardware requires OS changes, like device driver installation, but doesn't affect applications. 
+New software needs OS support but doesn't change hardware. 
+Changing the OS requires ensuring compatibility with both applications and hardware.
+
+---------------------------------------
+
+Storage Structure
+
+Main memory is the primary volatile(radnom access) storage accessible by the CPU. 
+Secondary storage, like hard disks and solid-state disks, offers large nonvolatile capacity. 
+Hard disks use magnetic platters divided into tracks and subdivide to sectors, while solid-state disks are faster and increasingly popular. The disk controller manages interactions between the device and the computer.
+
+---------------------------------------
+
+Storage Hierarchy
+
+Storage systems are organized hierarchically based on speed, cost, and volatility. Caching involves copying data to faster storage, with main memory acting as a cache for secondary storage. Each device controller has a device driver that manages I/O and provides a uniform interface between the controller and the kernel.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
