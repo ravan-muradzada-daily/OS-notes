@@ -20,7 +20,6 @@ If we use -t flag (ls -lt), it will sort it according to timestamp.
 
 -S will sort it by the file size.
 
-
 2) pwd -> It shows the current directory. Using that we can know where we are currently in the current folderly.
 
 
